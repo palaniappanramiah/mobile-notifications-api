@@ -1,4 +1,4 @@
-package com.driftt.notification;
+package com.drift.notification;
 
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
@@ -11,8 +11,8 @@ import static spark.Spark.*;
 
 public class NotificationApplication {
 
-    public static final String ACCOUNT_SID = "ACc0fcf1db8e0874424d64c52105208fd8";
-    public static final String AUTH_TOKEN = "c609ec126d0737b221e599a05a3035b1";
+    public static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
+    public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
     public static final String FROM_NUMBER = "+19378702747";
     public static final String ACTUAL_MESSAGE = "Your agent is available to chat now";
 
