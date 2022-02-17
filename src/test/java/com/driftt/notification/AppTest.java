@@ -1,4 +1,4 @@
-package com.driftt.mobile-notifications-api;
+package com.driftt.notification;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

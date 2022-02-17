@@ -5,6 +5,10 @@
   <artifactId>mobile-notifications-api</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   <name>mobile-notifications-api</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -13,6 +17,16 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.twilio.sdk</groupId>
+      <artifactId>twilio</artifactId>
+      <version>8.26.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-core</artifactId>
+      <version>2.9.3</version>
     </dependency>
   </dependencies>
 </project>
